@@ -305,3 +305,5 @@ var guesses = 0;
 var isSunk = false;
 
  */
+
+hp test
