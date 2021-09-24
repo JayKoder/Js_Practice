@@ -295,6 +295,181 @@ switch (a) {
 		alert("Might be too high");
 } */
 
+/* let apt = "leader"
+let signInTime = prompt ("time in", "");
+	if (signInTime == "morning") {
+		alert("early");
+	}else if (signInTime == "noon") {
+		alert("do better");
+	}else {
+		alert("demoted");
+	} */
+
+/* var car = {
+	make: "volvo",
+	speed: 160,
+	engine: {
+		size: 2.0,
+		make: "bmw",
+		fuel: "petrol",
+		piston:[ {maker: "bmw"}, {maker: "bmw"} ],
+	},
+	drive: function() {return "drive";}
+}; */
+
+//house test
+/* let house = {
+	color: "white",
+	doors: "wooden",
+	toilets: 3,
+	rooms: 3,
+	kitchen: {
+		fridge: "deep freezer",
+		pots: 11,
+		cylinder: "full",
+		plates: 12,
+	},
+	compound: [
+		"garden",
+		"poultry",
+		"carPark" [ { car: "benz" }, { car: "toyota" } ],
+	],
+}; */
+
+/* const speak = function(name, time){
+	console.log("Good" + time + name);
+};
+speak(' Mario', ' morning');
+
+
+function test(name = "Elizabeth ", title = "Queen ") {
+	console.log("Hail " + title + name );
+};
+test();
+
+//HOW TO PASS VALUES INTO A FUNCTION
+const calcArea = function(radius){
+	let area =  3.14 * radius**2;		//return 3.14 * radius**2; (shorter code)
+	return area;
+}
+const a = calcArea(5);		//create a memory pointer for the function(calcArea) so the function can be logged
+console.log(a);
+ */
+
+/* function checkAge(age) {
+	if (age >= 18) {
+		return true;	//Execution stops at "return" and value is returned to the calling code then execution continues
+	} else {
+		return alert("Do you have permission from your parents?");
+	}
+}
+
+let age = prompt("How old are you?", 18);
+
+if (checkAge(age)) {
+	alert("Access granted");
+} else {
+	alert("Access denied");
+} */
+
+//FOR loop
+/* const names = ["shaun", "mario", "luigi"];
+for (let i = 0; i < names.length; i++) {	//.length calculates 'names' length of values (3 elements)
+	console.log(names[i]);
+}
+
+//WHILE loop
+const nameS = ["shaun", "mario", "luigi"];
+let i = 0;
+while (i < nameS.length) {
+	console.log(nameS[i]);
+	i++;
+} */
+
+//(.includes) identifies if a character is present in a var or value
+/* const password = "p@ss12";
+if (password.length >= 12 && password.includes("@")) {
+	console.log("that password is mighty strong");
+} else if (password.length >= 8 || password.includes("@")) {
+	console.log("that password is strong enough");
+} else {
+	console.log("password is not strong enough");
+}
+ */
+
+
+/* //switch statement
+const grade = "D";
+switch(grade) {
+	case "A":
+		console.log("You got an A!");	//Case where grade is 'A', log this
+		break;
+	case "B":
+		console.log("You got an B!");
+		break;
+	case "C":
+		console.log("You got an C!");
+		break;
+	case "D":
+		console.log("You got an D!");
+		break;
+	case "E":
+		console.log("You got an E!");
+		break;
+	default:
+		console.log("not a valid grade");
+}
+ */
+
+/* //regular function
+const calcArea = function(radius){
+	return 3.14 * radius**2;
+}
+const result = calcArea(5);
+console.log('area is:', result);
+ */
+
+/* //arrow function
+const calcArea = (radius) => {	//parenthesis can drop its brackets if it has only one parameter 
+	return 3.14 * radius**2;
+};
+let result = calcArea(5);
+console.log('area is:', result);
+
+const calcArea = radius => 3.14 * radius**2;	//shorter arrow function
+
+ */
+
+
+/* //regular function
+const greet = function() {
+	return "Hello World";
+}
+const result = greet();
+console.log(result);
+//above function (regular function) converted to an arrow function
+const greet = () => "Hello World!";
+const result = greet();
+console.log(result);
+ */
+
+/* 
+const bill = function (products, tax) {
+	let total = 0;
+	for(let i = 0; i < products.length; i++){
+		total += products[i] + products[i] * tax;
+	}
+	return total;
+}
+console.log(bill([10,15,30], 0.2)); */
+
+/* 
+const greet = () => "hello"
+let resultOne = greet();
+console.log(resultOne);
+ */
+
+
 /* //BATTLESHIP GAME
 var location1 = 3;
 var location2 = 4;
@@ -303,5 +478,4 @@ var guess;
 var hits = 0;
 var guesses = 0;
 var isSunk = false;
-
  */
