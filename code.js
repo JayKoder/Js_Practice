@@ -463,12 +463,28 @@ const bill = function (products, tax) {
 }
 console.log(bill([10,15,30], 0.2)); */
 
-/* 
+/* //Arrow function
 const greet = () => "hello"
 let resultOne = greet();
 console.log(resultOne);
  */
 
+//CALL BACK FUNCTION (where a function is passed as an argument to another function parameter)
+/* 
+const myFunc = (callbackFunc) => {
+	let value = 50;
+	callbackFunc(value);
+};
+myFunc(function(value){		//a call back function... it can also be converted into an arrow function
+	console.log(value);
+});
+ */
+
+let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+
+people.forEach((person, index) => {
+	console.log(index, person);
+});
 
 /* //BATTLESHIP GAME
 var location1 = 3;
