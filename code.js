@@ -480,18 +480,133 @@ myFunc(function(value){		//a call back function... it can also be converted into
 });
  */
 
-let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+/* let people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
 
 people.forEach((person, index) => {
 	console.log(index, person);
-});
+}); */
 
-/* //BATTLESHIP GAME
-var location1 = 3;
-var location2 = 4;
-var location3 = 5;
-var guess;
-var hits = 0;
-var guesses = 0;
-var isSunk = false;
- */
+//LOGICAL OPERATORS || &&
+/* const password = "p@ss";
+
+if (password.length >= 12 && password.includes("@")){
+	console.log("that password is mighty strong");
+}	else if (password.length >= 8 || password.includes("@")) {
+	console.log("that p assword is long enough!");
+}	else {
+	console.log("password is not long enough");
+} */
+
+//object literal
+
+// let user = {
+// 	name: "crystal",
+// 	age: 30,
+// 	email: "jay@mail",
+// 	location: "berlin",
+// 	// blogs: ["why mac and cheese rules", "10 things to make with marmite"],
+// 	blogs: [
+// 		{ title: "why mac and cheese rules", likes: 30 },
+// 		{ title: "10 things to make with marmite", likes: 50 }
+// 	],
+// 	login: function () {
+// 		console.log("the user logged in");
+// 	},
+// 	logout: function () {
+// 		console.log("the user logged out");
+// 	},
+// 	logBlogs: function(){
+// 		console.log("this user has written the following blogs:");
+// 		this.blogs.forEach(blog => {
+// 			console.log(blog.title, blog.likes);
+// 		});
+// 	}
+// };
+
+/* console.log(user);
+console.log(user.name);
+
+// user.age = 35;  //changes age to 35
+console.log(user.age);
+
+console.log(user["name"]); //square bracket notation
+
+user["name"] = "chun-li"
+console.log(user["name"]);
+*/
+
+// user.login(); // A string method is a way to call a function
+// user.logout();
+// user.logBlogs();
+
+
+// // Math object
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
+
+// const area = 7.7;
+// console.log(Math.round(area));	//ROUNDS A DECIMAL TO ITS NEAREST NUMBER (UP OR DOWN)
+// console.log(Math.floor(area));	//ROUNDS A DECIMAL TO ITS NEAREST "LOWER" NUMBER (DOWN ONLY)
+// console.log(Math.ceil(area));	//ROUNDS A DECIMAL TO ITS NEAREST "UPPER" NUMBER (UP ONLY)
+// console.log(Math.trunc(area));	//TAKES AWAY NUMBER AFTER A DECIMAL POINT AND TURNS IT TO AN INTEGAR
+
+// //RANDOM NUMBERS
+// const random = Math.random();
+
+// console.log(random); // "RANDOM" METHOD PICKS A RANDOM NUMBER BTW 1-0
+// console.log(Math.round(random));	//LIKE ABOVE, 'MATH.ROUND' ROUNDS UP/DOWN A "IN THIS CASE A RANDOM NUMBER BTW 1-0"
+// console.log(Math.round(random * 100));	// LOGS A RANDOM ROUNDED UP/DOWN NUMBER BTW 1-0
+
+//PRIMITIVE VALUES
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// REFERENCE VALUES
+// const userOne = { name: "ryu", age: 30};
+// const userTwo = userOne;
+
+// console.log(userOne, userTwo);
+
+// userOne.age = 40;
+// console.log(userOne, userTwo);
+
+
+// DOM
+// const para = document.querySelector("p");
+// console.log(para);
+
+// const para = document.querySelector(".error");
+// console.log(para);
+
+// const paras = document.querySelectorAll("p");
+// console.log(paras[1]);	//square bracket notation can be used to select particular elements needed
+
+// const paras = document.querySelectorAll("p");	//"querySelectorAll()" selects all elements within its value
+// paras.forEach(para => {
+// 	console.log(para);
+// });
+
+// const title = document.querySelector("h1");
+// console.log(title.style);
+// console.log(title.style.color);	//LOGS THE COLOR PROPERTY OF THE STYLE ATTRIBUTE USED
+
+// title.style.margin = "50px";	//SETS MARGIN IN STYLE ATTRIBUTE
+// title.style.color = "crimson";	//SETS COLOR
+// title.style.fontSize = "60px";	//SETS FONT SIZE
+// title.style.margin = "";		//SETS AN EMPTY MARGIN
+
+const paras = document.querySelectorAll("p");
+paras.forEach(para => {							//FOR EACH PARAGRAPH FROM ALL THE PARAGRAPH
+	if(para.textContent.includes("error")){		//IF  TEXT CONTENT OF PARAGRAPH INCLUDES "ERROR"
+		para.classList.add("error");			//ADD A CLASS OF ERROR
+	}
+	if(para.innerText.includes("success")){		//IF  TEXT CONTENT OF PARAGRAPH INCLUDES "SUCCESS"
+		para.classList.add("success");			//ADD A CLASS OF "SUCCESS"
+	}
+});
